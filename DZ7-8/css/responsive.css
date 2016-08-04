@@ -208,3 +208,39 @@
     	font-size: 1.1rem;
 	}
 }
+@media (max-width: 320px){
+	.header-block {
+	  padding-left: 0px;
+	}
+	.menu {
+ 	    border:none;
+    	background:none;
+	}
+	.menu__item{
+		border:none;
+    	background:none;	
+	}
+	.slider-img{
+		display: none;
+	}
+	.slider-text {
+	    width: 100%;
+	    margin-left: 0px;
+	    padding-left: 0px;
+	    text-align: center;
+	}
+	.slider-text__h3 {
+ 	 	width: 165px;
+    	margin-left: 25%;
+ 	}
+ 	.slider-text__h4 {
+ 	 	width: 210px;
+ 	 	height: 20px;
+ 	 	overflow:hidden;
+ 	 	margin-top:5px;
+ 	 	margin-left: 25%;
+ 	}
+ 	 .menu--footer{
+		display: none;
+	}
+}

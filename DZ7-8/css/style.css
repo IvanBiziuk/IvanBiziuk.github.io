@@ -262,6 +262,7 @@ body{
 	left:-25px;
 	width: 56px;
 	height: 55px;
+	cursor:pointer;	
 }
 .starts:after{
 	content: "";	
@@ -448,14 +449,13 @@ footer{
 .footer-box__text{
 	font-size: 1rem;
     font-weight: normal;
-    height: 120px;
+    
     padding: 0px 25px 0px 0px;
-    overflow: hidden;
     font-family: 'Open Sans', sans-serif;
     line-height: 24px;
 }
 .footer-box__text--second{
-	height: 180px;
+	
 	line-height: 26px;
 }
 .nav-section{
