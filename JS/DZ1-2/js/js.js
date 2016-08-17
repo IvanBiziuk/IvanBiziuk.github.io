@@ -12,5 +12,5 @@ function findName()	{
 		} 
  		alert('Ошибка, не верно введено имя пользователя!');
 	}		
-name();
+findName();
 	
