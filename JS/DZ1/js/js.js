@@ -1,30 +1,32 @@
-function pow(a,b){    
-	result = a;       			    // промежуточному результату присваиваем значение переменной      
-	lastResult=0;					// финальный результат вычислений
-	if(b>0){
-		for (i=1; i<b; i++){	   // цикл степени 
-			result = result*a;     //вычисление степени
-		}
-		lastResult = result;       //запись финального результата
-	}else if (b==0){			   //проверка нулевой степени
-		result = a/a;
-		lastResult=result;        
-	}else if (b<0){                //проверка отрицательнй степени
-		b = -b;                    //приведение к положительнму значение
-		for (i=1; i<b; i++){       //цикл
-			result = result*a;     //обычное возведение в степень
-		}
-		lastResult = 1/result;     // вычисление отрицательной степени
-	}		
-	return lastResult;
-}
-do{                                            //цикл ввода целого цисла 
-var anyNum = prompt ('Введите целое число');
-if (parseInt(anyNum) == anyNum){              //проверка ввода целого числа
-	var anyDeg = prompt('Введите степень');   
-	pow (anyNum, anyDeg);                     //вызов функции
-}else {
-	alert('Неверное число');
-}
-}while (parseInt(anyNum) != anyNum);
-alert(lastResult);                           //вывод конечного результата
+(function() {
+	function pow(a,b){    
+		result = a;       			          
+		lastResult=0;					
+		if(b>0){
+			for (i=1; i<b; i++){	   
+				result = result*a;     
+			}
+			lastResult = result;       
+		}else if (b==0){			   
+			result = a/a;
+			lastResult=result;        
+		}else if (b<0){                
+			b = -b;                    
+			for (i=1; i<b; i++){       
+				result = result*a;     
+			}
+			lastResult = 1/result;     
+		}		
+		return lastResult;
+	}
+	do{                                            
+	var anyNum = prompt ('Введите целое число');
+	if (parseInt(anyNum) == anyNum){              
+		var anyDeg = prompt('Введите степень');   
+		pow (anyNum, anyDeg);                     
+	}else {
+		alert('Неверное число');
+	}
+	}while (parseInt(anyNum) != anyNum);
+	alert(lastResult);
+})();	
