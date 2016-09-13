@@ -1,9 +1,13 @@
 (function() {
-	function findName()	{
-		var arr = [];
+	var arr = [];
+	
+	function createArrayName()	{
 		for (var i = 0; i < 5; i++ ) {
 			arr[i] = prompt('Введите имя');
-		}
+		}return arr;
+		console.log(arr);
+	}
+	function checkLogin(){	
 		var userName = prompt('Введите имя пользователя');
 			for (var j = 0; j < 5; j++ ) {
 				if(arr[j] == userName) {
@@ -13,5 +17,6 @@
 			} 
 			alert('Ошибка, не верно введено имя пользователя!');
 		}		
-	findName();
+	createArrayName();
+	checkLogin();
 })();	
