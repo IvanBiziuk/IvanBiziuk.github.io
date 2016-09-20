@@ -1,0 +1,522 @@
+@charset "utf-8";
+/*css Document*/
+*, html, body, h2{
+    margin:0;
+	padding:0;
+	outline:none;
+	
+}
+
+body{	
+	background-image:linear-gradient(90deg,rgba(185,203,191,1)0%, rgba(144,148,127,1)20%, rgba(144,148,127,1)50%, rgba(185,203,191,1)100%);
+}
+.menu ul li a, .footer-h3 h3, .footer-column ul, .footer-text{
+	font-family: 'Oswald', sans-serif;
+}
+.line-top{
+	width:100%;
+	height:259px;
+	background:url(../images/bg-top.png) repeat-x; /*размножаем по горизонтали*/
+	position:absolute;
+}
+.line-top2{
+	width:100%;
+	height:22px;
+	background:url(../images/line-top.png);
+	position:absolute;
+	z-index:10;
+}
+.container-boss{
+	width:1064px;
+	height:auto;
+	margin:0 auto;	
+}
+header{
+	width:100%;
+	height:252px;
+	background:url(../images/bg-header.png) no-repeat;
+	position:relative;
+	z-index:5;
+	box-shadow:0px -55px 90px rgba(0,0,0,.3);
+}
+header:before, header:after{
+	width:27px;
+	height:15px;
+	content:"";
+	bottom:6px;
+}
+header:before{
+	background:url(../images/corner-left.png) no-repeat;
+	position:absolute;
+	bottom:6px;
+}
+header:after{
+	background:url(../images/corner-right.png) no-repeat;
+	position:absolute;
+	bottom:6px;
+	right:1px;
+}
+.logo-header{
+	width:auto;    /*можно указать и фиксированные размеры*/
+	height:auto;
+	display:inline-block;
+	vertical-align:top;/*работает и без него*/
+	margin:20px 0 0 40px;
+}
+.container-soc{
+	width:800px;
+	height:51px;
+	background:url(../images/container-soc.png) no-repeat right;
+	position:absolute;
+	top:6px;
+	right:50px;
+	z-index:20;
+	padding:15px 32px 0 0;
+}
+.container-soc ul{
+	float:right;
+	list-style:none;
+	position:relative; /*обязательно указываем для манипуляций с позиционированием псевдокласса before*/
+}
+.container-soc ul li{
+	float:left; /*выровняли пункты меню по вертикали*/
+}
+.container-soc ul li a{
+	width:19px;
+	height:19px;
+	display:block;
+	background-image:url(../images/sprite-soc.png);
+	background-repeat:no-repeat;
+	margin-right:5px;
+}
+#tw{
+	background-position:-22px 0px;
+}
+#rss{
+	background-position:-44px 0px;
+}
+#vv{
+	background-position:-70px 0px;
+}
+.container-soc ul:before{
+	content:"Keep in contact";
+	font-style:italic;
+	font-weight:bold;
+	color:#d96c33;
+	background:url(../images/dotted.png) no-repeat right center;/*если не указывать где тогда будет background*/
+	display:block;
+	position:absolute;
+	left:-200px;
+	padding-right:85px;/*расстояние между content и background в псевдоклассах before/after*/
+}
+.container-search{
+		width:348px;
+		height:52px;
+		background:url(../images/bg-search.png) no-repeat;
+		vertical-align:top;
+		display:inline-block;
+		margin:76px 0 0 244px;
+		position:relative;
+}
+.container-search:before{
+		content:"";
+		width:274px;
+		height:29px;
+		background:url(../images/dotted2.png) no-repeat;
+		display:block;
+		position:absolute;
+		margin:15px -230px; 0 0;
+}
+.container-search:after{
+		content:"";
+		width:9px;
+		height:38px;
+		background:url(../images/dotted3.png) no-repeat;
+		display:block;
+		position:absolute;
+		top:6px;
+		right:8px;
+}
+#search{
+	width:270px;
+	height:40px;
+	background:transparent;
+	margin-left:42px;
+	border:none;
+	font-size:18px;
+	padding-top:2px;
+}
+#search-btn{
+	width:18px;
+	height:31px;
+	background:url(../images/search-btn.png) no-repeat;
+	display:block;
+	position:absolute;
+	top:5px;
+	right:15px;
+	border:0;
+	cursor:pointer;
+}
+.menu{
+	width:auto;
+	height:auto;
+	vertical-align:top;
+	display:inline-block;
+	
+}
+.menu ul{
+	list-style:none;
+	margin-top:20px;
+}
+.menu ul li {
+	float:left;
+}
+.menu ul li a{
+	font-size:24px;
+	color:#2d1600;
+	padding-left:60px;
+	text-decoration:none;
+}
+.menu ul li a:hover{
+	text-decoration:underline;
+	opacity:.7;
+}
+.container-content{
+	width:1010px;
+	height:auto;
+	background:url(../images/bg-content.png);
+	margin:-27px auto 0 auto;
+	position:relative;
+	padding-top:46px;
+}
+.container-content:before{
+	width:1010px;
+	height:auto;
+	background:url(../images/bg-content.png);
+	margin:-27px auto 0 auto;
+	position:relative;
+	padding-top:46px;
+}
+.top-content{
+	width:997px;
+	height:6px;
+	background:url(../images/top-content.png);
+	position:absolute;
+	top:18px;
+	left:6px;
+}
+.slider{
+	width:944px;
+	height:340px;
+	background:url(../images/bg-slider.png);
+	margin:0 auto;
+	position:relative;
+}
+.slider img{
+	width:901px;
+	height:298px;
+	position:absolute;
+	top:21px;
+	left:21px;
+	z-index:0;
+}
+#btn-prev, #btn-next{
+	width:96px;
+	height:87px;
+	display:block;
+	position:absolute;
+	z-index:1;
+	top:117px;
+}
+#btn-prev{
+	background:url(../images/btn-prev.png);
+	left:-49px;
+}
+#btn-next{
+	background:url(../images/btn-next.png);
+	right:-48px;
+}
+.lozung{
+	width:100%;
+}
+.lozung h2{
+	font-family: 'Palanquin Dark', sans-serif;
+	font-size:27px;
+	color:#2d1600;
+	text-align:center;
+	padding:38px 0 45px 0;
+	position:relative;
+}
+.lozung h2:after{
+	content:"";
+	width:35px;
+	height:35px;
+	background:url(../images/star.png);
+	position:absolute;
+	bottom:30px;
+}
+.container-column{
+	width:982px;
+	height:auto;
+	margin:0 auto;
+}
+.column{
+	width:327px;
+	height:auto;
+	display:inline-block;
+	vertical-align:top;
+	margin-left:-4px;/*inline-block имеет свои собственные отступы - убираем их и тогда все блоки становятся в ряд иначе, 3-ий будет на 2-ой строке.*/
+}
+.container-h3{
+	width:100%;
+	height:70px;
+	background:url(../images/str.png) no-repeat;
+	text-align:center;
+	padding-top:20px;
+}
+.container-h3 h3{
+	font-family: 'Teko', sans-serif;
+	font-size:36px;
+	font-weight:300;
+	color:#4e2400;
+	text-shadow:0px 2px 2px grey;
+}
+.column-text{
+	font-family: 'Times New Roman', sans-serif;
+	width:259px;
+	height:auto;
+	font-size:14px;
+	text-align:justify;
+	padding:20px 18px 45px 50px;
+	position:relative;
+}
+.column-text:before{
+	content:"";
+	display:block;
+	position:absolute;
+	left:18px;
+}
+#cc1 .column-text:before{
+	background:url(../images/star-p.png) no-repeat;
+	left:18px;
+	width:28px;
+	height:26px;
+}
+#cc2 .column-text:before{
+	background:url(../images/skobka.png) no-repeat;
+	left:18px;
+	width:17px;
+	height:53px;
+}
+#cc3 .column-text:before{
+	background:url(../images/kavichki.png) no-repeat;
+	left:18px;
+	width:28px;
+	height:25px;
+}
+.video{
+	width:271px;
+	height:118px;
+	padding:0px 0px 0px 18px;
+	position:relative;
+}
+.video-btn{
+	width:30px;
+	height:30px;
+	background:url(../images/video-btn.png) no-repeat;
+	position:absolute;
+	cursor:pointer;
+	left:50%;
+	top:50%;
+	margin:-15px 0 0 0px;
+	display:none;
+}
+.video:hover .video-btn{
+	display:block;
+}
+.video-comment{
+	font-size:9px;
+	text-align:right;
+	padding:7px 17px 0 0;
+	position:relative;
+}
+.video-comment:before{
+	width:145px;
+	height:37px;
+	content:"";
+	background:url(../images/video-comment.png) no-repeat;
+	position:absolute;
+	left:75px;
+	top:-20px;
+	
+}
+#cc2 .container-h3{
+	background-position:-330px 0px;
+}
+#cc3 .container-h3{
+	background-position:-660px 0px;
+}
+.gallery{
+	width:815px;
+	height:194px;
+	background:url(../images/gallery.png) no-repeat;
+	position:relative;
+	margin:43px auto 0px auto;
+	padding:39px 0 60px 169px;
+}
+.gallery img {
+	margin-right:32px;
+}
+.bg-bottom{
+	width:100%;
+	height:294px;
+	background:url(../images/bg-bottom.png) repeat-x; /*размножаем по горизонтали*/	
+	z-index:-2;
+	position:absolute;
+	margin-top:13px;
+}
+.line-bottom{
+	width:1064px;
+	height:90px;
+	background:url(../images/line-bottom.png);
+	margin:0 auto;
+	position:relative;
+	top:-20px;
+	z-index:1;
+}
+.line-bottom:before, .line-bottom:after{
+	content:"";
+	width:27px;
+	height:15px;
+	position:absolute;
+	display:block;
+	top:68px;
+	z-index:10;
+}
+.line-bottom:before{
+	background:url(../images/corner-left.png) no-repeat;
+	left:-1px;	
+}
+.line-bottom:after{
+	background:url(../images/corner-right.png) no-repeat;
+	right:0px;	
+}
+.line-bottom p{
+	color:#d96c33;
+	position:absolute;
+	top:39px;
+	right:40px;
+	font-size:14px;
+	font-weight:bold;
+	font-style:italic;
+}
+footer{
+	width:1012px;
+	height:260px;
+	margin:-41px auto 0 auto;	
+	background:url(../images/bg-footer.png) no-repeat;
+	position:relative;
+	box-shadow:0px 15px 90px rgba(0,0,0,.3);
+}
+.footer-line-top{
+	width:100%;
+	height:6px;
+	background:url(../images/footer-line-top.png) no-repeat;
+	position:absolute;
+	top:7px;
+	left:6px;
+}
+.logo-footer{
+	width:auto;
+	height:auto;
+	margin:77px 0 0 175px;
+	display:inline-block;
+	padding-right:84px;
+	position:relative;
+}
+	
+.logo-footer:after{
+	content:"";
+	width:631px;
+	height:7px;
+	background:url(../images/footer-logo-dotted-line.png) no-repeat;
+	display:block;
+	position:absolute;
+	top:25px;
+	left:210px;
+}
+.pic-footer{
+	width:auto;
+	height:auto;
+	margin:30px 0 0 35px;
+	display:inline-block;
+	position:absolute;
+}
+.pic-footer:hover{
+	transform: rotateY(360deg);
+	animation: two 2s ease;
+	animation-direction: alternate;
+}
+@keyframes two {
+  0% {
+    transform: rotateY(360deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+.footer-column{
+	display:inline-block;
+	vertical-align:top;
+	width:auto;
+	height:auto;
+	margin-top:65px;
+}
+.footer-h3{
+	width:100%;
+	height:auto;
+	text-align:center;
+	padding:5px 65px 0 0;
+}
+.footer-h3 h3{
+	font-size:18px;
+	color:#2d1600;
+	text-transform:uppercase;
+	text-align:left;
+}
+.footer-column ul{
+	list-style:none;
+	margin-top:10px;
+	font-size:12px;
+	color:#2f8271;
+}
+
+.footer-column ul li{
+	margin:2px 0;
+}
+.footer-column ul li:first-child{
+	margin-top:20px;
+}
+.footer-text{
+	width:145px;
+	margin-top:20px;
+	text-align:justify;
+	color:#2f8271;
+	font-size:12px;
+}
+#fc3:after{
+	content:"";
+	width:28px;
+	height:25px;
+	position:absolute;
+	background:url(../images/kavichki.png) no-repeat;
+	top:33px;
+	right:15px;
+}
+.line-bottom2{
+	width:100%;
+	height:22px;
+	background:url(../images/line-bottom2.png);
+	position:absolute;
+	bottom:0px;
+}
