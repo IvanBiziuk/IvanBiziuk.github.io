@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Form</title>
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/js.js"></script>
+	<link rel = "stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel = "stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="wrapper">
+      <div class="main-block">
+          <div class="blocks first-block">
+            <label for="firstname" class="first-label">Firstname</label>
+            <label for="lastname" class="second-label">Lastname</label>
+            <label for="address" class="third-label">Address</label>
+          </div>
+
+          <div class="blocks second-block">
+            <input id="firstname" type="text" name="name" class="first-label">
+            <input id="lastname" type="text" name="name" class="second-label">
+            <input id="address" type="text" name="name" class="third-label">
+          </div>
+
+          <div class="blocks third-block">
+            <p class="popup popup-one first-label">
+              Please provide your firstname.
+            </p>
+            <p class="popup popup-two second-label" style="display: none;">
+              Please provide also your lastname.
+            </p>
+            <p class="popup popup-three third-label" style="display: none;">
+              Your home or work address.
+            </p>
+          </div>
+      </div>
+
+      <button type="button" name="button">Show help</button>
+    </div>	
+</body>
+
+
