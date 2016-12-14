@@ -7,9 +7,10 @@
     <title>Test template</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <script src="js/js.js"></script>
 </head>
 
-<body>
+<body onload = "animation();">
     <div class="video_bg">
         <video poster="img/bg.jpg" autoplay loop>
             <source src="video/video-bg.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
@@ -19,10 +20,10 @@
     <div class="main-block">
         <div class="container">
             <div class="left">
-                <img src="img/back-phone.png" alt="">
-                <img class="img-absolute" src="img/front-phone.png" alt="">
+                <img id="img1" class="from-left-to-right-set" src="img/back-phone.png" alt="">
+                <img id="img2" class="img-absolute from-left-to-right-set" src="img/front-phone.png" alt="">
             </div>
-            <div class="right">
+            <div id="mainRight" class="right from-right-to-left-set">
                 <div class="b-logo">
                     <img src="img/logo.png" alt="">
                 </div>
