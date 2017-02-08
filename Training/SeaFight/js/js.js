@@ -95,22 +95,41 @@ function parseGuess(guess) {
     return null;
 };
 
-function handleFireButton(){
+function handleFireButton() {
     var guessInput = document.getElementById("guessInput");
     var guess = guessInput.value;
-    controller.processGuess(guess);  //отсюда идет запуск всей этой кухни
+    controller.processGuess(guess); //отсюда идет запуск всей этой кухни
     guessInput.value = "";
     return guessInput;
 };
 
-function pageReload(){
+function handleKeyPress(e) {
+    var fireButton = document.getElementById("fireButton");
+    if (e.keyCode === 13) {
+        fireButton.click();
+    }
+    return false;
+};
+
+function pageReload() {
     location.reload();
 };
 
-function init(){
+function startPreventDefault(event) {
+    event.preventDefault();
+};
+
+function init() {
+    var form = document.getElementById('board-form-id'); //отмена события отправки данных формы по умолчанию
+    form.addEventListener('submit', startPreventDefault);//если это не сделать не работают другие события
+
     var fireButton = document.getElementById("fireButton");
-    var reloadButton = document.getElementById("reloadButton");
     fireButton.addEventListener("click", handleFireButton);
+
+    var guessInput = document.getElementById('guessInput');
+    guessInput.addEventListener('keydown', handleKeyPress);
+
+    var reloadButton = document.getElementById("reloadButton");
     reloadButton.addEventListener("click", pageReload);
     guessInput.focus();
 };
