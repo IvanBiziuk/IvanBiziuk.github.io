@@ -1,1 +1,0 @@
-Simple TODO list app with minimalistic design! :)
