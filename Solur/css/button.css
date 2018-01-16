@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+.button{
+    font:10.3px Calibri, Arial, sans-serif;
+
+    /* A semi-transparent text shadow */
+   /* text-shadow:1px 1px 0 rgba(255,255,255,0.4);*/
+
+    /* Overriding the default underline styling of the links */
+    text-decoration:none !important;
+    white-space:nowrap;
+    display:inline-block;
+    vertical-align:baseline;
+    position:relative;
+    cursor:pointer;
+/*    padding:10px 20px;*/
+
+    background-repeat:no-repeat;
+
+    /* The following two rules are fallbacks, in case
+       the browser does not support multiple backgrounds. */
+
+    /*background-position:bottom left;
+    background-image:url('../images/button_bg.png');*/
+
+    /* Multiple backgrounds version. The background images
+       are defined individually in color classes */
+
+    background-position:bottom left, top right, 0 0, 0 0;
+    background-clip:border-box;
+
+    /* Applying a default border raidus of 8px */
+
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius:2px;
+
+    /* A 1px highlight inside of the button */
+
+    -moz-box-shadow:0 0 1px #fff inset;
+    -webkit-box-shadow:0 0 1px #fff inset;
+    box-shadow:0 0 1px #fff inset;
+
+    /* Animating the background positions with CSS3 */
+    /* Currently works only in Safari/Chrome */
+
+    -webkit-transition:background-position 3s;
+    -moz-transition:background-position 3s;
+    transition:background-position 3s;
+}
+
+.button:hover{
+
+    /* The first rule is a fallback, in case the browser
+       does not support multiple backgrounds
+    */
+
+    background-position:top left;
+    background-position:top left, bottom right, 0 0, 0 0;
+}
+
+.button:active{
+    /* Moving the button 1px to the bottom when clicked */
+    bottom:-1px;
+}
+
+/* The three buttons sizes */
+
+.button.big		{ font-size:30px;}
+.button.medium	{ font-size:18px;}
+.button.small	{ font-size:13px;}
+
+/* A more rounded button */
+
+.button.rounded{
+    -moz-border-radius:4em;
+    -webkit-border-radius:4em;
+    border-radius:4em;
+}
+
+
+/* Defining four button colors */
+
+/*.gray.button{
+    !*color:#525252 !important;*!
+    border:1px solid #a5a5a5 !important;
+    background-color: white;
+    background-image:url('../images/button_bg.png'), url('../images/button_bg.png'), -moz-radial-gradient(center bottom, circle, rgba(197,199,202,1) 0,rgba(197,199,202,0) 100px),-moz-linear-gradient(#c5c7ca, #92989c);
+    background-image:url('../images/button_bg.png'), url('../images/button_bg.png'), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(white), to(rgba(197,199,202,0))),-webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), to(#ffffff));
+}*/
+
+.gray.button:hover{
+     background-image:	url('../images/button_bg.png'), url('../images/button_bg.png'),
+    -moz-radial-gradient(center bottom, circle,
+            rgba(209,34,26,1) 0,rgba(209,34,26,0) 100px),
+    -moz-linear-gradient(#63c7fe, #58bef7);
+
+    background-image:	url('../images/button_bg.png'), url('../images/button_bg.png'),
+    -webkit-gradient(	radial, 50% 100%, 0, 50% 100%, 100,
+            from(rgba(209,34,26,1)), to(rgba(247,103,97,0))),
+    -webkit-gradient(linear, 0% 0%, 0% 100%, from(#9f0527), to(#f76761));
+}
