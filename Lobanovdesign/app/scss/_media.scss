@@ -1,0 +1,529 @@
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width : 1366px) {
+
+  .welcome {
+    .h1 {
+      font-size: 58px;
+    }
+  }
+  .carousel-services
+    &-content {
+      padding: 5px 10%;
+    }
+    &-composition
+      .h3 {
+        font-size: 28px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+      }
+}
+
+@media only screen and (max-width : 1200px) {
+
+  .welcome {
+    .h1 {
+      font-size: 50px;
+      span {
+        font-size: 25px;
+      }
+      i {
+        span {
+          font-size: 58px;
+        }
+      }
+    }
+  }
+  .header-contacts {
+    font-size: 14px;
+  }
+  .carousel-services-img {
+    flex-direction: column;
+  }
+  .s
+    &-king, &-review, &-partners {
+      padding: 8% 0;
+    }
+    &-call {
+      background-size: cover;
+    }
+  section {
+    .head-block {
+      .h2 {
+        font-size: 55px;
+      }
+    }
+  }
+  .s-profit {
+    .head-block {
+      .h2 {
+        line-height: 45px;
+      }
+    }
+    .content-block {
+      p {
+        padding-right: 0;
+      }
+      ul {
+        li {
+          line-height: 25px;
+          padding: 10px 0 10px 20px;
+          background-position-y: 15px;
+        }
+      }
+    }
+  }
+  .s-shema {
+    .content-block {
+      ul {
+        li {
+          font-size: 15px;
+          padding: 45px 20px 45px 120px;
+        }
+      }
+    }
+  }
+  .callback {
+    .formhead {
+      font-size: 25px;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+  .welcome
+    .h1 {
+      font-size: 40px;
+    }
+  .header-contacts {
+    font-size: 14px;
+  }
+  .s-reason .one, .s-reason .two  {
+    p {
+      font-size: 16px;
+    }
+  }
+  .s-scope {
+    .content-block {
+      p {
+        font-size: 14px;
+      }
+    }
+    .flex-center {
+      display: block;
+      img {
+        width: 100%;
+        height: 100%;
+        margin-top: 15%;
+      }
+    }
+  }
+  .s-profit {
+    .content-block {
+      p {
+        font-size: 16px;
+      }
+      ul {
+        li {
+          padding: 10px 0 10px 20px;
+          background-position-y: 15px;
+        }
+      }
+    }
+  }
+  .s-shema {
+    .content-block {
+      ul {
+        li {
+          font-size: 14px;
+          padding: 47px 20px 47px 120px;
+        }
+      }
+    }
+  }
+  .s-call
+    &::before {
+      width: 100%;
+    }
+  .s-call {
+    .callback {
+      button.button-white {
+        width: 140px;
+        padding: 5px;
+        margin-top: 0;
+        right: 100%;
+      }
+      .selectize-input {
+        border-left: 1px solid white;
+      }
+      .name {
+        border-left:1px soid #fff;
+      }
+    }
+  }
+  .s-about {
+    .about-container {
+      .about-head {
+        h4 {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+  section {
+    height: auto;
+  }
+  section {
+    .head-block {
+      .h2 {
+        font-size: 45px;
+      }
+    }
+  }
+  .header-contacts .center {
+    text-align: center;
+    margin-left: -15px;
+  }
+  .quotes {
+    display: none;
+  }
+  .s-reason {
+    .row-custom {
+      img {
+        display: none;
+      }
+    }
+  }
+  .s-shema {
+  	.head-block {
+  		.h2 {
+  			span {
+  				font-size: 45px;
+  			}
+  		}
+  	}
+  }
+  .s-profit {
+    .content-block {
+      p {
+        text-align: center;
+      }
+    }
+  }
+  .s-about {
+    .about-container {
+      .about-head {
+        padding-top: 20px;
+      }
+    }
+  }
+  .s-call {
+    .callback {
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: center;
+      button.button-white {
+        right: 0;
+        bottom: 10%;
+      }
+    }
+    &::before {
+      width: 100%;
+    }
+  }
+  .main-footer {
+    .footer-adr {
+      font-size: 14px;
+      .footer-phone {
+        font-size: 14px;
+        .fa {
+          top: 3px;
+        }
+      }
+    }
+    .footer-menu {
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+  .top {
+    bottom: 5px;
+  }
+  .top.active {
+    right: 5px;
+  }
+  p.footer-adr i {
+    display: none;
+  }
+  .footer-column {
+    padding: 30px 0;
+  }
+  .footer-column img {
+    padding: 0 0;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+  section {
+    height: auto;
+    .head-block {
+      .h2 {
+        font-size: 37px;
+      }
+    }
+  }
+  .top-line {
+    .top-line-logo {
+      a {
+        display: block;
+        text-align: center;
+        margin-top: -15px;
+        margin-left: -120px;
+        width: inherit;
+        margin: 0 auto;
+      }
+    }
+  }
+  .welcome
+    .h1 {
+      font-size: 28px;
+      margin-top: 5px;
+    p
+      span {
+        font-size: 10px;
+      }
+    strong {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+  }
+  .header-composition {
+    padding-top: 0;
+    p {
+      font-size: 14px;
+    }
+    }
+  .header-contacts {
+    font-size: 14px;
+  }
+  .s-shema {
+  	.head-block {
+  		.h2 {
+  			span {
+  				font-size: 37px;
+  			}
+  		}
+  	}
+  }
+  .s-call {
+    &::before {
+      width: 100%;
+    }
+  }
+}
+/* 5.5 inch display */
+
+@media only screen and (max-width : 430px) {
+  body.ishome {
+    .site-header {
+      .top-line {
+        .lang {
+          top: 9px;
+          right: 10px;
+          a {
+            padding: 2px 5px;
+            font-size: 10px;
+          }
+        }
+        a {
+          img {
+            width: 100px;
+          }
+        }
+      }
+    }
+  }
+  .s-shema {
+  	.head-block {
+  		.h2 {
+  			span {
+  				font-size: 25px;
+  			}
+  		}
+  	}
+  }
+  section {
+    height: auto;
+    .head-block {
+      .h2 {
+        font-size: 25px;
+      }
+    }
+  }
+  .s-profit {
+    .head-block {
+      .h2 {
+        line-height: 35px;
+      }
+    }
+  }
+  .s-call {
+    .callback {
+      button.button-white {
+        right: 0;
+        bottom: 5%;
+      }
+    }
+  }
+  .hamburger {
+    top: -3px;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+  body.ishome {
+    .site-header {
+      .top-line {
+        .lang {
+          top: 9px;
+          right: 10px;
+          a {
+            padding: 2px 5px;
+            font-size: 10px;
+          }
+        }
+        a {
+          img {
+            width: 100px;
+          }
+        }
+      }
+    }
+  }
+  .hamburger {
+    top: -3px;
+  }
+  .welcome
+    .h1 {
+      font-size: 25px;
+      margin-top: 5px;
+    }
+    p
+      span {
+        font-size: 8px;
+      }
+  .button {
+    padding: 12px 38px;
+  }
+
+  .header-contacts .center {
+    font-size: 12px;
+    margin-left: -5px;
+  }
+  .s-reason {
+    .head-block {
+      padding-left: 0;
+    }
+  }
+  .s-call {
+    .callback {
+      button.button-white {
+        right: 0;
+        bottom: 5%;
+      }
+    }
+  }
+  .main-footer {
+    .footer-adr {
+      font-size: 18px;
+      .footer-phone {
+        font-size: 18px;
+        .fa {
+          top: 3px;
+        }
+      }
+    }
+    .footer-menu {
+      a {
+        font-size: 11px;
+      }
+      ul {
+        a {
+          &::before {
+            top: 3px;
+          }
+        }
+      }
+    }
+    .social-footer {
+      margin-top: 0;
+      .social {
+        li {
+          a {
+            height: 30px;
+            width: 30px;
+            margin: 0;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+    .footer-adr {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+	/**/
